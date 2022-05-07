@@ -1,0 +1,361 @@
+*{
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Monospace;
+}
+#navbar{
+    background-color: #000000;
+    opacity:0.9;
+}
+
+#navbar ul{
+    margin: 10px;
+}
+
+#navbar ul li{
+    margin: 0px 10px;
+}
+
+#navbar .navbar-nav .nav-item.list a{
+    font-size: 20px;
+    color: rgb(204, 204, 204);
+    transition: 0.5s all;
+}
+
+#navbar .navbar-nav .nav-item.list a:hover{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid white;
+}
+
+#navbar #active{
+    color: rgb(240, 232, 232);
+}
+
+
+/* Responsive nav bar */
+#navbar .container .toggle-button{
+    position: absolute;
+    margin: 14px;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px
+}
+#navbar .container .toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+#particles-js{
+    background: linear-gradient(to left, rgba(255,0,0,0), rgb(4, 0, 13)), url(Image/back1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 88vh;
+}
+
+#particles-js #welcomemessage{
+    padding: 20px;
+    padding-top: 20%;
+}
+
+#particles-js #welcomemessage h2{
+    color: white;
+}
+
+
+
+
+#particles-js #frontbtn{
+    padding: 15px;
+    margin-top:20px;
+    background: brown;
+    border-radius:20px;
+    opacity: 0.8;
+    color:white;
+}
+
+#particles-js #frontbtn:hover{
+    border: 1px solid rgb(165, 42, 42);
+    background:none;
+    color: white;
+}
+
+#hr{
+    border: 0;
+    height: 4px;
+    background: linear-gradient(to right, rgba(248, 246, 246, 0), 
+    rgba(0, 0, 0, 0.75), rgba(245, 243, 243, 0));
+}
+
+/* #body #profile_div{
+    padding-top: 20px;
+    padding-left: 30px;
+} */
+
+#mydetails h2{
+    text-align: center;
+    font-weight: bold;
+    color: brown;
+}
+#profile_details{
+    padding-top: 20px;
+}
+
+#profile{
+    height: 500px;
+}
+
+#profile_details #CV{
+    width: 50%;
+    padding: 15px 40px;
+    margin-top: 10px;
+    background: brown;
+    border-radius:20px;
+    color:white;
+}
+
+#profile_details #CV:hover{
+    width: 50%;
+    padding: 15px 40px;
+    margin-top: 10px;
+    background: white;
+    border-radius:20px;
+    color:brown;
+    border: 1px solid #a62b2b;
+}
+
+#Myskills{
+    padding: 50px 15px;
+    width: 100%;
+
+}
+
+#Myskills .programming-label{ 
+    color: rgb(82, 78, 78); 
+    font-weight: bold;
+    font-size: 20px;
+    margin: 7px 0px;
+} 
+
+#Myskills .skills-bar .skills .info span{
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(82, 78, 78);
+    
+}
+
+#Myskills .skills-bar{
+    margin-top: 5px;
+    width: 100%;
+    background-color: white;
+}
+
+#Myskills .skills-bar .skills{
+    margin: 20px 0;
+}
+#Myskills .skills-bar .skills .info{
+    margin-bottom: 5px;
+}
+
+#Myskills .skills-bar .skills .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background-color:#f0f0f0;
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+                0px 1px rgba(255,255,255,0.8);
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100%{
+        transform: scaleX(1)
+    }
+}
+
+#Myskills .skills-bar .skills .progress-line span{
+    height: 100%;
+    background-color:#6665ee;
+    position: absolute;
+    border-radius: 4px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+#Myskills .skills-bar .skills .progress-line.html span{
+    width:80%
+}
+#Myskills .skills-bar .skills .progress-line.css span{
+    width:80%
+}
+#Myskills .skills-bar .skills .progress-line.python span{
+    width: 70%
+}
+#Myskills .skills-bar .skills .progress-line.php span{
+    width:65%
+}
+#Myskills .skills-bar .skills .progress-line.javascript span{
+    width:60%
+}
+
+#Myskills .skills-bar .skills .progress-line.database span{
+    width:60%
+}
+#Myskills .skills-bar .skills .progress-line.java span{
+    width:50%
+}
+
+
+#Myskills .skills-bar .skills .progress-line.html span::after{
+    content:"80%"
+}
+#Myskills .skills-bar .skills .progress-line.css span::after{
+    content:"80%"
+}
+#Myskills .skills-bar .skills .progress-line.python span::after{
+    content:" 70%"
+}
+#Myskills .skills-bar .skills .progress-line.php span::after{
+    content:"65%"
+}
+#Myskills .skills-bar .skills .progress-line.javascript span::after{
+    content:"60%"
+}
+
+#Myskills .skills-bar .skills .progress-line.database span::after{
+    content:"60%"
+}
+#Myskills .skills-bar .skills .progress-line.java span::after{
+    content:"50%"
+}
+
+#Myskills .skills-bar .skills .progress-line span::before{
+    position: absolute;
+    content: "";
+    top:-10px;
+    right: 0;
+    height: 0;
+    width:0;
+    border: 7px solid transparent;
+    border-top-width: 0px;
+    border-right-color: #000;
+}
+
+#Myskills .skills-bar .skills .progress-line span::after{
+    position: absolute;
+    right:0;
+    background-color: #000;
+    color: white;
+    font-weight: 500;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    margin-top: -28px;
+    
+}
+
+
+.footer{
+    background: url(Image/footer2.jpg);
+    height: 86.9vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 41.9vh;
+}
+
+.footer .content{
+    height: 45vh;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    background: rgba(219, 219, 219, 0.24);
+    box-shadow: 0 8px 32px 0 rgba(19,19,20,1);
+}
+
+.footer .content .container .row{
+    padding-top: 40px;
+}
+
+.footer .content .container .row .icon, 
+.footer .content .container .row .list, 
+.footer .content .container .row .cv, 
+.footer .content .container .row .legal{
+    display: flex;
+    justify-content: center;
+}
+.footer .content .container .row .icon a{
+    padding: 20px;
+}
+
+.footer .content .container .row .list a{
+    padding: 20px;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer .content .container .row .list a:hover{
+    color:brown;
+}
+
+.footer .content .container .row .cv a{
+    display:grid;
+    place-items: center;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    width: 250px;
+    height: 50px;
+    background: brown;
+    border-radius: 10px;
+}
+.footer .content .container .row .cv a:hover{
+    background-color: transparent;
+    color: brown;
+    border: 1px solid brown;
+}
+
+.footer .content .container .row .legal p{
+    padding: 10px 0px 0px 0px;
+    font-size: 11px;
+    color: rgb(43, 42, 42);
+    font-weight: italic;
+}
+
+
+/* Media Queries */
+@media (max-width: 800px){
+    #navbar .container .toggle-button{
+        display: flex;
+    }
+
+    #navbar .container .nav.navbar-nav.navbar-right {
+        width: 100%;
+        display: none;
+    }
+    #navbar ul li {
+        justify-content: center;
+        display: grid;
+    }
+    .navbar-expand-sm .navbar-nav {
+        flex-direction: column;
+    }
+
+    #navbar .container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
